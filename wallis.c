@@ -27,12 +27,12 @@ float wallis_pi(int x)
 {
 	float p,q,r,pi,i;
 	r=1.0;
-		for(i=1;i<=x;i++)
-    {
-			p=4*i*i;
-			q=p-1;
-			r=r*(p/q);
-		}
+	for(i=1;i<=x;i++)
+    	{
+		p=4*i*i;
+		q=p-1;
+		r=r*(p/q);
+	}
 	pi=2*r;
 	return pi;		
 }
